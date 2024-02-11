@@ -1,0 +1,17 @@
+
+# Install tekton pipelines and tasks
+kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline/latest/release.yaml
+
+# Install tekton operators for tekton config
+kubectl apply -f https://storage.googleapis.com/tekton-releases/operator/latest/release.yaml
+
+# Install Tekton dashboard
+kubectl apply --filename https://storage.googleapis.com/tekton-releases/dashboard/latest/release.yaml
+
+# View Tekton dashboard
+kubectl proxy
+
+# Install pipelines-as-code on Kubernetes
+kubectl apply -f https://raw.githubusercontent.com/openshift-pipelines/pipelines-as-code/stable/release.k8s.yaml
+
+# current ingress IP: 34.117.163.35
