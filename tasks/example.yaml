@@ -1,0 +1,19 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: echo-task
+spec:
+  steps:
+    - name: echo
+      image: ubuntu
+      command: ["echo"]
+      args: ["Hello, Tekton!"]
+
+---
+apiVersion: tekton.dev/v1beta1
+kind: TaskRun
+metadata:
+  name: echo-taskrun
+spec:
+  taskRef:
+    name: echo-task
