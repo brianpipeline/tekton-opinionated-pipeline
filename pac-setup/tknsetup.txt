@@ -15,3 +15,4 @@ kubectl proxy
 kubectl apply -f https://raw.githubusercontent.com/openshift-pipelines/pipelines-as-code/stable/release.k8s.yaml
 
 # current ingress IP: 34.117.163.35
+
