@@ -14,6 +14,8 @@ kubectl proxy
 # Install pipelines-as-code on Kubernetes
 kubectl apply -f https://raw.githubusercontent.com/openshift-pipelines/pipelines-as-code/stable/release.k8s.yaml
 
-# current ingress IP: 34.117.163.35
+# current ingress IP: http://34.160.179.96/
 
 
+tkn-pac-gh-app
+tkn pac bootstrap
