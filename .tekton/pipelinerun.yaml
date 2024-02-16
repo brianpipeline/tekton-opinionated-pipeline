@@ -65,6 +65,15 @@ spec:
           - name: source
             workspace: source
         taskSpec:
+          computeResources:
+            requests:
+              cpu: 500m
+              memory: 128Mi
+              emphermal-storage: 50Mi
+            limits:
+              cpu: 1000m
+              memory: 256Mi
+              emphemeral-storage: 100Mi
           workspaces:
             - name: source
           steps:
