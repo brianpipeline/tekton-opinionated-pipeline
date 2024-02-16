@@ -59,8 +59,8 @@ spec:
       # to one of the hub task.
       - name: noop-task
         displayName: Task with no effect
-        runAfter:
-          - fetch-repository
+        # runAfter:
+        #   - fetch-repository
         workspaces:
           - name: source
             workspace: source
