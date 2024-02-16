@@ -67,13 +67,11 @@ spec:
         taskSpec:
           computeResources:
             requests:
-              cpu: 500m
-              memory: 128Mi
-              emphermal-storage: 50Mi
-            limits:
-              cpu: 1000m
-              memory: 256Mi
-              emphemeral-storage: 100Mi
+            cpu: "0.5" # Request 0.5 CPU cores
+            memory: "512Mi" # Request 512 MiB of memory
+          limits:
+            cpu: "1" # Limit CPU usage to 1 CPU core
+            memory: "1Gi" # Limit memory usage to 1 GiB
           workspaces:
             - name: source
           steps:
